@@ -99,6 +99,11 @@ function initMap() {
     }).addTo(map);
 
     mapMarkersGroup = L.layerGroup().addTo(map);
+
+    // Solve classic Leaflet tile rendering glitch in container/flex layouts
+    setTimeout(() => {
+        if (map) map.invalidateSize();
+    }, 200);
 }
 
 function getMarkerStyle(city, metric) {
@@ -257,6 +262,11 @@ async function loadDashboardData() {
         
         // Initial chart load
         updateTrendsChart();
+        
+        // Ensure map recalculates container dimensions and renders tiles perfectly
+        setTimeout(() => {
+            if (map) map.invalidateSize();
+        }, 300);
         
     } catch (err) {
         console.error('Error loading dashboard data:', err);
