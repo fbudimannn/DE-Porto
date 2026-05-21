@@ -832,3 +832,16 @@ h1, h2, h3, h4, .brand h2 {
     color: white !important;
 }
 
+/* Fix Leaflet tile distortion & alignment conflicts */
+.leaflet-container img {
+    max-width: none !important;
+    max-height: none !important;
+}
+.leaflet-control-zoom a {
+    color: var(--text-secondary) !important;
+}
+.leaflet-control-zoom a:hover {
+    color: white !important;
+}
+
+
