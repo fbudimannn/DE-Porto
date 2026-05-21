@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌦️ Indonesia Weather & AQI Analytics</title>
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">
+                    <i data-lucide="cloud-lightning" class="accent-color"></i>
+                </div>
+                <div>
+                    <h2>IndoWeather</h2>
+                    <span class="subtext">Data Pipeline Portal</span>
+                </div>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#" class="active" id="nav-dashboard">
+                    <i data-lucide="layout-dashboard"></i> Dashboard
+                </a>
+                <a href="#" id="nav-cities">
+                    <i data-lucide="map-pin"></i> City Profiles
+                </a>
+                <a href="#" id="nav-alerts">
+                    <i data-lucide="alert-triangle"></i> Alerts <span class="badge" id="alert-badge-count">0</span>
+                </a>
+                <a href="#" id="nav-trends">
+                    <i data-lucide="trending-up"></i> Historical Trends
+                </a>
+            </nav>
+
+            <div class="pipeline-status-card">
+                <div class="status-header">
+                    <span class="status-indicator live"></span>
+                    <span class="status-label">Pipeline Active</span>
+                </div>
+                <div class="status-details">
+                    <p><strong>Last Ingest:</strong> <span id="pipeline-last-ingest">Loading...</span></p>
+                    <p><strong>Total Cities:</strong> <span id="pipeline-cities-count">0</span></p>
+                    <p><strong>DB Engine:</strong> <span>PostgreSQL</span></p>
+                    <p><strong>Transforms:</strong> <span>dbt Core v1.11</span></p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="welcome">
+                    <h1>Indonesia Weather & Air Quality Analytics</h1>
+                    <p class="subtext">Real-time ELT pipeline tracking meteorological and environmental indices across 10 major cities</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn btn-primary" id="btn-refresh">
+                        <i data-lucide="rotate-cw"></i> Refresh Data
+                    </button>
+                </div>
+            </header>
+
+            <!-- Metric Summary Grid -->
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon bg-blue-glow">
+                        <i data-lucide="thermometer" class="color-blue"></i>
+                    </div>
+                    <div class="metric-info">
+                        <h3>National Avg Temp</h3>
+                        <div class="metric-value"><span id="metric-avg-temp">--</span>°C</div>
+                        <p class="metric-change text-muted">Across 10 cities</p>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon bg-green-glow">
+                        <i data-lucide="wind" class="color-green"></i>
+                    </div>
+                    <div class="metric-info">
+                        <h3>Average Air Quality</h3>
+                        <div class="metric-value"><span id="metric-avg-aqi">--</span> <span class="aqi-label-micro" id="metric-aqi-status">--</span></div>
+                        <p class="metric-change text-muted">European AQI standard</p>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon bg-red-glow">
+                        <i data-lucide="shield-alert" class="color-red"></i>
+                    </div>
+                    <div class="metric-info">
+                        <h3>Active Air Alerts</h3>
+                        <div class="metric-value"><span id="metric-alerts-count">--</span></div>
+                        <p class="metric-change text-red" id="metric-alerts-subtext">Unhealthy conditions detected</p>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon bg-purple-glow">
+                        <i data-lucide="cloud-drizzle" class="color-purple"></i>
+                    </div>
+                    <div class="metric-info">
+                        <h3>Total Daily Rain</h3>
+                        <div class="metric-value"><span id="metric-total-rain">--</span> mm</div>
+                        <p class="metric-change text-muted">Combined precipitation</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dashboard View -->
+            <div id="view-dashboard" class="dashboard-view active-view">
+                <!-- Grid: Current Weather & AQI Overview -->
+                <section class="section-container">
+                    <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px;">
+                        <div>
+                            <h2><i data-lucide="compass"></i> Live Conditions (Latest Pull)</h2>
+                            <span class="subtext">Real-time coordinates metrics</span>
+                        </div>
+                        <div class="pagination-info" style="font-size: 0.9rem; color: var(--text-secondary);">
+                            Showing <span id="displayed-cities-count" style="color: white; font-weight: 600;">0</span> of <span id="total-cities-count" style="color: white; font-weight: 600;">0</span> cities
+                        </div>
+                    </div>
+                    
+                    <!-- Filters & Search Toolbar -->
+                    <div class="filter-controls card" style="margin-top: 16px; margin-bottom: 20px; padding: 16px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; border-radius: var(--radius-md); background: rgba(14, 19, 31, 0.4);">
+                        <div class="search-box" style="flex: 2; min-width: 250px; display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); padding: 8px 12px; border-radius: var(--radius-sm);">
+                            <i data-lucide="search" style="width: 16px; height: 16px; color: var(--text-muted);"></i>
+                            <input type="text" id="city-search-input" placeholder="Search cities/regencies..." style="background: none; border: none; color: white; outline: none; width: 100%; font-size: 0.9rem;">
+                        </div>
+                        <div class="filter-group" style="display: flex; gap: 8px; flex-wrap: wrap; flex: 3; min-width: 300px; justify-content: flex-end;">
+                            <select id="filter-island" class="form-select">
+                                <option value="all">All Islands</option>
+                                <option value="Sumatera">Sumatera</option>
+                                <option value="Jawa">Jawa</option>
+                                <option value="Kalimantan">Kalimantan</option>
+                                <option value="Sulawesi">Sulawesi</option>
+                                <option value="Nusa Tenggara">Nusa Tenggara</option>
+                                <option value="Maluku">Maluku</option>
+                                <option value="Papua">Papua</option>
+                            </select>
+                            <select id="filter-aqi" class="form-select">
+                                <option value="all">All AQI Levels</option>
+                                <option value="good">Good (0-50)</option>
+                                <option value="moderate">Moderate (51-100)</option>
+                                <option value="sensitive">Unhealthy for Sensitive (101-150)</option>
+                                <option value="unhealthy">Unhealthy (>150)</option>
+                            </select>
+                            <select id="sort-by" class="form-select">
+                                <option value="name">Sort: Name (A-Z)</option>
+                                <option value="temp-desc">Temp: Highest First</option>
+                                <option value="temp-asc">Temp: Lowest First</option>
+                                <option value="aqi-desc">AQI: Worst First</option>
+                                <option value="aqi-asc">AQI: Best First</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="cities-cards-grid" id="live-conditions-grid">
+                        <!-- Dynamic City Cards Go Here -->
+                        <div class="loading-state">
+                            <i data-lucide="loader-2" class="spin"></i> Loading city cards...
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: center; margin-top: 24px;">
+                        <button class="btn btn-primary" id="btn-load-more" style="display: none;">
+                            <i data-lucide="chevron-down"></i> Load More Cities
+                        </button>
+                    </div>
+                </section>
+
+                <div class="dashboard-secondary-grid">
+                    <!-- Column 1: Temperature & Precipitation Trend Chart -->
+                    <div class="card chart-card">
+                        <div class="card-header">
+                            <h3><i data-lucide="line-chart"></i> 24h Temperature & AQI Forecast</h3>
+                            <div class="select-wrapper">
+                                <select id="chart-city-selector" class="form-select">
+                                    <!-- Dynamic City Options -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="temp-trend-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Active AQI Alerts -->
+                    <div class="card alerts-card">
+                        <div class="card-header">
+                            <h3><i data-lucide="bell-ring" class="color-red animate-pulse"></i> Air Quality Warnings</h3>
+                            <span class="badge badge-red">AQI > 100</span>
+                        </div>
+                        <div class="alert-list-container" id="dashboard-alerts-list">
+                            <!-- Dynamic Alerts List -->
+                            <div class="empty-state">
+                                <i data-lucide="smile"></i>
+                                <p>Air quality across all cities is healthy right now!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Daily Summary Mart Table -->
+                <section class="section-container card table-card">
+                    <div class="card-header table-header">
+                        <div>
+                            <h3><i data-lucide="database"></i> dbt Aggregated Mart Table</h3>
+                            <p class="subtext">Source: <code>mart_city_daily_summary</code> in analytics schema</p>
+                        </div>
+                        <div class="table-search">
+                            <i data-lucide="search"></i>
+                            <input type="text" id="table-search-input" placeholder="Search cities or provinces...">
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="data-table" id="summary-data-table">
+                            <thead>
+                                <tr>
+                                    <th>City</th>
+                                    <th>Island</th>
+                                    <th>Date</th>
+                                    <th>Avg Temp</th>
+                                    <th>Min / Max</th>
+                                    <th>Humidity</th>
+                                    <th>Rainfall</th>
+                                    <th>Max AQI</th>
+                                    <th>AQI Category</th>
+                                </tr>
+                            </thead>
+                            <tbody id="summary-table-body">
+                                <!-- Dynamic rows -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-pagination" style="display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; border-top: 1px solid var(--border-color); font-size: 0.9rem;">
+                        <button class="btn" id="btn-table-prev" disabled><i data-lucide="chevron-left"></i> Previous</button>
+                        <span style="color: var(--text-secondary);">Page <span id="table-page-num" style="color: white; font-weight: 600;">1</span> of <span id="table-page-total" style="color: white; font-weight: 600;">1</span></span>
+                        <button class="btn" id="btn-table-next" disabled>Next <i data-lucide="chevron-right"></i></button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

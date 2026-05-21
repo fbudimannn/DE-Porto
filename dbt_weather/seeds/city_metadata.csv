@@ -1,0 +1,515 @@
+city_name,lat,lon,province,island,timezone,elevation_m,population
+"Kabupaten Simeulue",2.61667,96.08333,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Aceh Singkil",2.41667,97.91667,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Aceh Selatan",3.16667,97.41667,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Aceh Tenggara",3.36667,97.7,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Aceh Timur",4.63333,97.63333,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Aceh Tengah",4.51,96.855,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Aceh Barat",4.45,96.16667,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Aceh Besar",5.38333,95.51667,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Pidie",5.08,96.11,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Bireuen",5.08333,96.58333,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Aceh Utara",4.97,97.14,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Aceh Barat Daya",3.83333,96.88333,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Gayo Lues",3.95,97.39,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Aceh Tamiang",4.25,97.96667,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Nagan Raya",4.16667,96.51667,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Aceh Jaya",4.86,95.64,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Bener Meriah",4.73015,96.86156,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Pidie Jaya",5.15,96.21667,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kota Banda Aceh",5.54167,95.33333,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kota Sabang",5.82164,95.31086,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kota Langsa",4.47,97.93,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kota Lhokseumawe",5.13333,97.06667,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kota Subulussalam",2.75,97.93333,"Aceh","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Nias",1.03333,97.76667,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Mandailing Natal",0.78378,99.25495,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Tapanuli Selatan",1.51667,99.25,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Tapanuli Tengah",1.9,98.66667,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Tapanuli Utara",2.0028,99.0707,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Toba Samosir",2.39793,99.21678,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Labuhan Batu",2.26667,100.1,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Asahan",2.78333,99.55,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Simalungun",2.9,99.0,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Dairi",2.86667,98.23333,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Karo",3.11667,98.3,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Deli Serdang",3.41667,98.66667,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Langkat",3.71667,98.21667,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Nias Selatan",0.77,97.75,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Humbang Hasundutan",2.26551,98.50376,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Pakpak Bharat",2.56667,98.28333,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Samosir",2.64025,98.71525,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Serdang Bedagai",3.36667,99.03333,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Batu Bara",3.16166,99.52652,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Padang Lawas Utara",1.46011,99.67346,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Padang Lawas",1.44684,99.99207,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Labuhan Batu Selatan",1.983,100.0976,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Labuhan Batu Utara",2.33349,99.63776,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Nias Utara",1.33037,97.31964,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Nias Barat",1.05966,97.58606,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kota Sibolga",1.73333,98.8,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kota Tanjung Balai",2.95833,99.79167,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kota Pematang Siantar",2.96667,99.05,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kota Tebing Tinggi",3.325,99.14167,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kota Medan",3.65,98.66667,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kota Binjai",3.8,108.23333,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kota Padang Sidempuan",1.37375,99.26843,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kota Gunungsitoli",1.32731,97.55018,"Sumatera Utara","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Kepulauan Mentawai",1.98917,99.51889,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Pesisir Selatan",-1.58333,100.85,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Solok",-0.96667,100.81667,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Sijunjung",-1.1827,101.6056,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Tanah Datar",-0.4555,100.5771,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Padang Pariaman",-0.6,100.28333,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Agam",-0.25,100.16667,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Lima Puluh Kota",-0.0168,100.5872,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Pasaman",0.42503,99.94606,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Solok Selatan",-1.23333,101.417,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Dharmasraya",-1.05,101.367,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Pasaman Barat",0.28152,99.51965,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kota Padang",-0.98333,100.45,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kota Solok",-0.76667,100.61667,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kota Sawah Lunto",-0.6,100.75,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kota Padang Panjang",-0.45,100.43333,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kota Bukittinggi",-0.275,100.375,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kota Payakumbuh",-0.23333,100.63333,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kota Pariaman",-0.62682,100.12047,"Sumatera Barat","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Kuantan Singingi",-0.47532,101.45857,"Riau","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Indragiri Hulu",-0.55,102.31667,"Riau","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Indragiri Hilir",-0.33333,103.16667,"Riau","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Pelalawan",0.20822,102.18607,"Riau","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Siak",0.97453,102.01355,"Riau","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Kampar",0.2344,101.2131,"Riau","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Rokan Hulu",0.88333,100.48333,"Riau","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Bengkalis",0.9838,102.5096,"Riau","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Rokan Hilir",2.16599,100.82514,"Riau","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Kepulauan Meranti",0.97488,102.69539,"Riau","Sumatera","Asia/Jakarta",10,100000
+"Kota Pekanbaru",0.53333,101.46667,"Riau","Sumatera","Asia/Jakarta",10,100000
+"Kota Dumai",1.61592,101.4917,"Riau","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Kerinci",-2.03333,101.53333,"Jambi","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Merangin",-2.06933,102.13303,"Jambi","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Sarolangun",-2.3,102.65,"Jambi","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Batang Hari",-1.75,103.11667,"Jambi","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Muaro Jambi",-1.55214,103.82163,"Jambi","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Tanjung Jabung Timur",-1.13198,103.61755,"Jambi","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Tanjung Jabung Barat",-1.1544,103.24402,"Jambi","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Tebo",-1.45576,102.37473,"Jambi","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Bungo",-1.50222,101.96,"Jambi","Sumatera","Asia/Jakarta",10,100000
+"Kota Jambi",-1.61667,103.65,"Jambi","Sumatera","Asia/Jakarta",10,100000
+"Kota Sungai Penuh",-2.10896,101.32175,"Jambi","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Ogan Komering Ulu",-4.13333,104.03333,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Ogan Komering Ilir",-3.36667,105.36667,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Muara Enim",-4.2327,103.6141,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Lahat",-3.7864,103.5428,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Musi Rawas",-3.08333,103.2,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Musi Banyu Asin",-2.41667,103.75,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Banyu Asin",-2.88333,104.38306,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Ogan Komering Ulu Selatan",-4.65728,104.00659,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Ogan Komering Ulu Timur",-3.85679,104.75209,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Ogan Ilir",-3.43186,104.62727,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Empat Lawang",3.22667,99.09256,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Penukal Abab Lematang Ilir",-3.21342,104.08722,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Musi Rawas Utara",-2.48533,103.29346,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kota Palembang",-3.0,104.71667,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kota Prabumulih",-3.46202,104.2229,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kota Pagar Alam",-4.13055,103.26822,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kota Lubuk Linggau",-3.29308,102.85503,"Sumatera Selatan","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Bengkulu Selatan",-4.35,103.03333,"Bengkulu","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Rejang Lebong",-3.43333,102.71667,"Bengkulu","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Bengkulu Utara",-3.33333,102.05,"Bengkulu","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Kaur",-4.78179,103.36109,"Bengkulu","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Seluma",-3.96644,102.47429,"Bengkulu","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Mukomuko",-3.07438,101.54766,"Bengkulu","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Lebong",-3.24278,102.3349,"Bengkulu","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Kepahiang",-3.60194,102.56424,"Bengkulu","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Bengkulu Tengah",-3.20679,102.12616,"Bengkulu","Sumatera","Asia/Jakarta",10,100000
+"Kota Bengkulu",-3.81667,102.31667,"Bengkulu","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Lampung Barat",-5.14904,104.19309,"Lampung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Tanggamus",-5.38508,104.62349,"Lampung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Lampung Selatan",-5.4531,104.9877,"Lampung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Lampung Timur",-5.10273,105.68003,"Lampung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Lampung Tengah",-4.86667,105.26667,"Lampung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Lampung Utara",-4.81667,104.8,"Lampung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Way Kanan",-4.44705,104.52753,"Lampung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Tulangbawang",-4.20604,105.57999,"Lampung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Pesawaran",-5.4298,105.17899,"Lampung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Pringsewu",-5.42211,104.93454,"Lampung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Mesuji",-4.0439,105.4013,"Lampung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Tulang Bawang Barat",-4.43975,105.0444,"Lampung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Pesisir Barat",-5.19323,103.93976,"Lampung","Sumatera","Asia/Jakarta",10,100000
+"Kota Bandar Lampung",-5.41667,105.25,"Lampung","Sumatera","Asia/Jakarta",10,100000
+"Kota Metro",-5.11856,105.29949,"Lampung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Bangka",-1.91667,105.93333,"Kepulauan Bangka Belitung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Belitung",-2.86667,107.7,"Kepulauan Bangka Belitung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Bangka Barat",-1.95839,105.53741,"Kepulauan Bangka Belitung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Bangka Tengah",-2.33989,106.1142,"Kepulauan Bangka Belitung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Bangka Selatan",-2.66803,106.01257,"Kepulauan Bangka Belitung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Belitung Timur",-2.9627,108.15216,"Kepulauan Bangka Belitung","Sumatera","Asia/Jakarta",10,100000
+"Kota Pangkal Pinang",-2.13333,106.13333,"Kepulauan Bangka Belitung","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Karimun",0.80764,103.41911,"Kepulauan Riau","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Bintan",0.95,104.61944,"Kepulauan Riau","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Natuna",4.71417,107.97639,"Kepulauan Riau","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Lingga",0.2,104.61667,"Kepulauan Riau","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Kepulauan Anambas",3.0,106.0,"Kepulauan Riau","Sumatera","Asia/Jakarta",10,100000
+"Kota Batam",1.05211,104.02851,"Kepulauan Riau","Sumatera","Asia/Jakarta",10,100000
+"Kota Tanjung Pinang",0.91683,104.44329,"Kepulauan Riau","Sumatera","Asia/Jakarta",10,100000
+"Kabupaten Kepulauan Seribu",-5.5985,106.55271,"Dki Jakarta","Jawa","Asia/Jakarta",10,100000
+"Kota Jakarta Selatan",-6.266,106.8135,"Dki Jakarta","Jawa","Asia/Jakarta",10,100000
+"Kota Jakarta Timur",-6.2521,106.884,"Dki Jakarta","Jawa","Asia/Jakarta",10,100000
+"Kota Jakarta Pusat",-6.1777,106.8403,"Dki Jakarta","Jawa","Asia/Jakarta",10,100000
+"Kota Jakarta Barat",-6.1676,106.7673,"Dki Jakarta","Jawa","Asia/Jakarta",10,100000
+"Kota Jakarta Utara",-6.1339,106.8823,"Dki Jakarta","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Bogor",-6.58333,106.71667,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Sukabumi",-7.06667,106.7,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Cianjur",-6.7725,107.08306,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Bandung",-7.1,107.6,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Garut",-7.38333,107.76667,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Tasikmalaya",-7.5,108.13333,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Ciamis",-7.28333,108.41667,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Kuningan",-7.0,108.55,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Cirebon",-6.8,108.56667,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Majalengka",-6.81667,108.28333,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Sumedang",-6.81667,107.98333,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Indramayu",-6.45,108.16667,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Subang",-6.50833,107.7025,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Purwakarta",-6.58333,107.45,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Karawang",-6.26667,107.41667,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Bekasi",-6.24667,107.10833,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Bandung Barat",-6.83333,107.48333,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Pangandaran",-7.6673,108.64037,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kota Bogor",-6.59167,106.8,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kota Sukabumi",-6.95,106.93333,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kota Bandung",-6.9175,107.62444,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kota Cirebon",-6.75,108.55,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kota Bekasi",-6.28333,106.98333,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kota Depok",-6.4,106.81667,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kota Cimahi",-6.89167,107.55,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kota Tasikmalaya",-7.35,108.21667,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kota Banjar",-7.36996,108.53209,"Jawa Barat","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Cilacap",-7.57417,108.98861,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Banyumas",-7.45,109.16667,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Purbalingga",-7.28417,109.35028,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Banjarnegara",-7.35111,109.5875,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Kebumen",-7.63917,109.66056,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Purworejo",-7.7,109.96667,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Wonosobo",-7.36139,109.92667,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Magelang",-7.4275,110.16194,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Boyolali",-7.5,110.7,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Klaten",-7.68333,110.61667,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Sukoharjo",-7.68333,110.83333,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Wonogiri",-7.91667,111.0,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Karanganyar",-7.62806,111.0625,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Sragen",-7.41278,110.935,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Grobogan",-7.11667,110.91667,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Blora",-7.06667,111.38333,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Rembang",-6.78333,111.46667,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Pati",-6.76667,111.1,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Kudus",-6.8,110.86667,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Jepara",-6.58333,110.76667,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Demak",-6.8993,110.6122,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Semarang",-7.20667,110.44139,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Temanggung",-7.25,110.11667,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Kendal",-7.0256,110.1685,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Batang",-7.03333,109.88333,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Pekalongan",-7.0319,109.624,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Pemalang",-7.03333,109.4,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Tegal",-7.03333,109.16667,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Brebes",-7.05,108.9,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kota Magelang",-7.5,110.225,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kota Surakarta",-7.55,110.81667,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kota Salatiga",-7.33278,110.48333,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kota Semarang",-7.03333,110.38333,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kota Pekalongan",-6.9,109.68333,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kota Tegal",-6.8686,109.1129,"Jawa Tengah","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Kulon Progo",-7.645,110.02694,"Di Yogyakarta","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Bantul",-7.9,110.36667,"Di Yogyakarta","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Gunung Kidul",-7.98333,110.61667,"Di Yogyakarta","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Sleman",-7.68167,110.32333,"Di Yogyakarta","Jawa","Asia/Jakarta",10,100000
+"Kota Yogyakarta",-7.8,110.375,"Di Yogyakarta","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Pacitan",-8.13333,111.16667,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Ponorogo",-7.93333,111.5,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Trenggalek",-8.16667,111.61667,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Tulungagung",-8.11667,111.91667,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Blitar",-8.13333,112.25,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Kediri",-7.83333,112.16667,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Malang",-8.16667,112.66667,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Lumajang",-8.11667,113.15,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Jember",-8.25,113.65,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Banyuwangi",-8.33333,114.2,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Bondowoso",-7.9404,113.9834,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Situbondo",-7.71667,114.05,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Probolinggo",-7.86667,113.31667,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Pasuruan",-7.73333,112.83333,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Sidoarjo",-7.45,112.7,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Mojokerto",-7.55,112.5,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Jombang",-7.55,112.25,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Nganjuk",-7.6,111.93333,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Madiun",-7.61667,111.65,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Magetan",-7.64472,111.35917,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Ngawi",-7.47444,111.33444,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Bojonegoro",-7.25,111.8,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Tuban",-6.96667,111.9,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Lamongan",-7.13333,112.31667,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Gresik",-7.1933,112.553,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Bangkalan",-7.05,112.93333,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Sampang",-7.05,113.25,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Pamekasan",-7.06667,113.5,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Sumenep",-7.11667,114.33333,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kota Kediri",-7.83333,112.01667,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kota Blitar",-8.1,112.16667,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kota Malang",-7.975,112.63333,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kota Probolinggo",-7.78333,113.21667,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kota Pasuruan",-7.65,112.9,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kota Mojokerto",-7.46667,112.43333,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kota Madiun",-7.63333,111.53333,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kota Surabaya",-7.26667,112.71667,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kota Batu",-7.83272,112.53751,"Jawa Timur","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Pandeglang",-6.63333,105.75,"Banten","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Lebak",-6.65,106.21667,"Banten","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Tangerang",-6.2,106.46667,"Banten","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Serang",-6.15,106.0,"Banten","Jawa","Asia/Jakarta",10,100000
+"Kota Tangerang",-6.17944,106.62991,"Banten","Jawa","Asia/Jakarta",10,100000
+"Kota Cilegon",-6.01667,106.01667,"Banten","Jawa","Asia/Jakarta",10,100000
+"Kota Serang",-6.12563,106.14999,"Banten","Jawa","Asia/Jakarta",10,100000
+"Kota Tangerang Selatan",-6.29373,106.71244,"Banten","Jawa","Asia/Jakarta",10,100000
+"Kabupaten Jembrana",-8.3,114.66667,"Bali","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Tabanan",-8.43333,115.06667,"Bali","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Badung",-8.51667,115.2,"Bali","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Gianyar",-8.46667,115.28333,"Bali","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Klungkung",-8.55,115.4,"Bali","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Bangli",-8.28333,115.35,"Bali","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Karang Asem",-8.3891,115.5393,"Bali","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Buleleng",-8.25,114.96667,"Bali","Nusa Tenggara","Asia/Makassar",10,100000
+"Kota Denpasar",-8.66667,115.21663,"Bali","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Lombok Barat",-8.69583,116.11667,"Nusa Tenggara Barat","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Lombok Tengah",-8.7,116.3,"Nusa Tenggara Barat","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Lombok Timur",-8.53333,116.53333,"Nusa Tenggara Barat","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Sumbawa",-8.7439,117.3324,"Nusa Tenggara Barat","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Dompu",-8.5094,118.4816,"Nusa Tenggara Barat","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Bima",-8.6,118.61667,"Nusa Tenggara Barat","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Sumbawa Barat",-8.75159,116.92132,"Nusa Tenggara Barat","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Lombok Utara",-8.35214,116.40152,"Nusa Tenggara Barat","Nusa Tenggara","Asia/Makassar",10,100000
+"Kota Mataram",-8.5833,116.1167,"Nusa Tenggara Barat","Nusa Tenggara","Asia/Makassar",10,100000
+"Kota Bima",-8.46728,118.75259,"Nusa Tenggara Barat","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Sumba Barat",-9.56667,119.45,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Sumba Timur",-9.88333,120.25,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Kupang",-9.91667,123.83333,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Timor Tengah Selatan",-9.83333,124.4,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Timor Tengah Utara",-9.33136,124.51904,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Belu",-9.41258,124.95066,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Alor",-8.3,124.56667,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Lembata",-8.41396,123.55225,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Flores Timur",-8.24224,122.96817,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Sikka",-8.66667,122.36667,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Ende",-8.84056,121.66389,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Ngada",-8.66667,121.0,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Manggarai",-8.56667,120.41667,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Rote Ndao",-10.73617,123.12054,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Manggarai Barat",-8.64484,119.88281,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Sumba Tengah",-9.62941,119.61914,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Sumba Barat Daya",-9.56216,119.08905,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Nagekeo",-8.8721,121.20963,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Manggarai Timur",-8.55533,120.59761,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Sabu Raijua",-10.56286,121.78894,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Malaka",-9.5632,124.89481,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kota Kupang",-10.21667,123.6,"Nusa Tenggara Timur","Nusa Tenggara","Asia/Makassar",10,100000
+"Kabupaten Sambas",1.41667,109.33333,"Kalimantan Barat","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Bengkayang",1.06911,109.66393,"Kalimantan Barat","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Landak",0.42373,109.75917,"Kalimantan Barat","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Mempawah",0.25,109.16667,"Kalimantan Barat","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Sanggau",0.25472,110.45,"Kalimantan Barat","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Ketapang",-1.58333,110.5,"Kalimantan Barat","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Sintang",-0.08333,112.08333,"Kalimantan Barat","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Kapuas Hulu",0.81667,112.76667,"Kalimantan Barat","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Sekadau",0.03485,110.95066,"Kalimantan Barat","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Melawi",-0.33617,111.698,"Kalimantan Barat","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Kayong Utara",-1.43711,110.79781,"Kalimantan Barat","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Kubu Raya",0.01637,109.33731,"Kalimantan Barat","Kalimantan","Asia/Makassar",10,100000
+"Kota Pontianak",-0.08333,109.36667,"Kalimantan Barat","Kalimantan","Asia/Makassar",10,100000
+"Kota Singkawang",0.90734,109.00103,"Kalimantan Barat","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Kotawaringin Barat",-2.4,111.73333,"Kalimantan Tengah","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Kotawaringin Timur",-2.08333,112.75,"Kalimantan Tengah","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Kapuas",-2.01667,114.38333,"Kalimantan Tengah","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Barito Selatan",-1.86667,114.73333,"Kalimantan Tengah","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Barito Utara",-0.98333,115.1,"Kalimantan Tengah","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Sukamara",-2.62675,111.23681,"Kalimantan Tengah","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Lamandau",-1.83828,111.2869,"Kalimantan Tengah","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Seruyan",-2.33333,112.25,"Kalimantan Tengah","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Katingan",-2.06667,113.4,"Kalimantan Tengah","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Pulang Pisau",-3.11858,113.8623,"Kalimantan Tengah","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Gunung Mas",-0.95,113.5,"Kalimantan Tengah","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Barito Timur",-1.93333,115.1,"Kalimantan Tengah","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Murung Raya",-0.01667,114.26667,"Kalimantan Tengah","Kalimantan","Asia/Makassar",10,100000
+"Kota Palangka Raya",-1.76979,113.73126,"Kalimantan Tengah","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Tanah Laut",-3.88333,114.86667,"Kalimantan Selatan","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Kota Baru",-3.0,116.0,"Kalimantan Selatan","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Banjar",-3.31667,115.08333,"Kalimantan Selatan","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Barito Kuala",-3.08333,114.61667,"Kalimantan Selatan","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Tapin",-2.91667,115.03333,"Kalimantan Selatan","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Hulu Sungai Selatan",-2.75,115.2,"Kalimantan Selatan","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Hulu Sungai Tengah",-2.61667,115.41667,"Kalimantan Selatan","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Hulu Sungai Utara",-2.45,115.13333,"Kalimantan Selatan","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Tabalong",-1.88333,115.5,"Kalimantan Selatan","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Tanah Bumbu",-3.45413,115.70372,"Kalimantan Selatan","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Balangan",-2.32314,115.62922,"Kalimantan Selatan","Kalimantan","Asia/Makassar",10,100000
+"Kota Banjarmasin",-3.32444,114.59102,"Kalimantan Selatan","Kalimantan","Asia/Makassar",10,100000
+"Kota Banjar Baru",-3.41667,114.83333,"Kalimantan Selatan","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Paser",-1.43517,116.23535,"Kalimantan Timur","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Kutai Barat",-0.59417,115.51575,"Kalimantan Timur","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Kutai Kartanegara",-0.44019,116.98139,"Kalimantan Timur","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Kutai Timur",1.03769,117.83112,"Kalimantan Timur","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Berau",2.0,117.3,"Kalimantan Timur","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Penajam Paser Utara",-1.25,116.83333,"Kalimantan Timur","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Mahakam Hulu",0.37822,115.38048,"Kalimantan Timur","Kalimantan","Asia/Makassar",10,100000
+"Kota Balikpapan",-1.16667,116.88333,"Kalimantan Timur","Kalimantan","Asia/Makassar",10,100000
+"Kota Samarinda",-0.43333,117.18333,"Kalimantan Timur","Kalimantan","Asia/Makassar",10,100000
+"Kota Bontang",0.12526,117.49603,"Kalimantan Timur","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Malinau",2.45,115.68333,"Kalimantan Utara","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Bulungan",3.0,117.16667,"Kalimantan Utara","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Tana Tidung",3.55,117.25,"Kalimantan Utara","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Nunukan",4.13333,116.7,"Kalimantan Utara","Kalimantan","Asia/Makassar",10,100000
+"Kota Tarakan",3.36667,117.6,"Kalimantan Utara","Kalimantan","Asia/Makassar",10,100000
+"Kabupaten Bolaang Mongondow",0.75,124.08333,"Sulawesi Utara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Minahasa",1.2537,124.83,"Sulawesi Utara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Kepulauan Sangihe",3.5,125.55,"Sulawesi Utara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Kepulauan Talaud",4.31178,126.78085,"Sulawesi Utara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Minahasa Selatan",1.21291,124.59708,"Sulawesi Utara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Minahasa Utara",1.4025,124.96,"Sulawesi Utara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Bolaang Mongondow Utara",0.78527,123.41766,"Sulawesi Utara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Siau Tagulandang Biaro",2.11728,125.37512,"Sulawesi Utara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Minahasa Tenggara",1.05633,124.7925,"Sulawesi Utara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Bolaang Mongondow Selatan",0.40912,123.75961,"Sulawesi Utara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Bolaang Mongondow Timur",0.72073,124.50256,"Sulawesi Utara","Sulawesi","Asia/Makassar",10,100000
+"Kota Manado",1.51667,124.88333,"Sulawesi Utara","Sulawesi","Asia/Makassar",10,100000
+"Kota Bitung",1.48333,125.15,"Sulawesi Utara","Sulawesi","Asia/Makassar",10,100000
+"Kota Tomohon",1.31307,124.83404,"Sulawesi Utara","Sulawesi","Asia/Makassar",10,100000
+"Kota Kotamobagu",0.68915,124.32678,"Sulawesi Utara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Banggai Kepulauan",-1.6424,123.54881,"Sulawesi Tengah","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Banggai",-1.2835,122.8892,"Sulawesi Tengah","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Morowali",-1.89342,121.25473,"Sulawesi Tengah","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Poso",-1.65,120.5,"Sulawesi Tengah","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Donggala",-0.58333,119.85,"Sulawesi Tengah","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Toli-Toli",1.30862,120.88643,"Sulawesi Tengah","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Buol",0.75,120.75,"Sulawesi Tengah","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Parigi Moutong",0.3368,120.17841,"Sulawesi Tengah","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Tojo Una-Una",-1.2036,121.48201,"Sulawesi Tengah","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Sigi",-1.385,119.96694,"Sulawesi Tengah","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Banggai Laut",-1.61841,123.49388,"Sulawesi Tengah","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Morowali Utara",-1.7207,121.24649,"Sulawesi Tengah","Sulawesi","Asia/Makassar",10,100000
+"Kota Palu",-0.86972,119.9,"Sulawesi Tengah","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Kepulauan Selayar",-6.81667,120.8,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Bulukumba",-5.41667,120.23333,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Bantaeng",-5.48333,119.98333,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Jeneponto",-5.63333,119.73333,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Takalar",-5.41667,119.51667,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Gowa",-5.31667,119.75,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Sinjai",-5.21667,120.15,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Maros",-5.05,119.71667,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Pangkajene Dan Kepulauan",-4.7827,119.5506,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Barru",-4.43333,119.68333,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Bone",-4.7,120.13333,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Soppeng",-4.3842,119.89,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Wajo",-4.0,120.16667,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Sidenreng Rappang",-3.85,119.96667,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Pinrang",-3.61667,119.6,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Enrekang",-3.5,119.86667,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Luwu",-2.5577,121.3242,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Tana Toraja",-3.0024,119.79655,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Luwu Utara",-2.6,120.25,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Luwu Timur",-2.50957,120.3978,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Toraja Utara",-2.92738,119.79218,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kota Makassar",-5.15,119.45,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kota Pare-Pare",-4.03333,119.65,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kota Palopo",-2.97841,120.11078,"Sulawesi Selatan","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Buton",-5.31667,122.58333,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Muna",-4.96667,122.66667,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Konawe",-3.91717,122.08823,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Kolaka",-4.08333,121.66667,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Konawe Selatan",-4.19191,122.44854,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Bombana",-4.6257,121.81641,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Wakatobi",-5.31934,123.5948,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Kolaka Utara",-3.10452,121.12427,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Buton Utara",-5.01457,122.93015,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Konawe Utara",-3.41552,121.99081,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Kolaka Timur",-4.01807,121.86172,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Konawe Kepulauan",-4.11656,123.10181,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Muna Barat",-4.83333,122.48333,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Buton Tengah",-5.31667,122.33333,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Buton Selatan",-5.56667,122.7,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kota Kendari",-3.98333,122.5,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kota Baubau",-5.477,122.6166,"Sulawesi Tenggara","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Boalemo",0.62689,122.3568,"Gorontalo","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Gorontalo",0.5728,122.2337,"Gorontalo","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Pohuwato",0.7098,121.59582,"Gorontalo","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Bone Bolango",0.50296,123.27501,"Gorontalo","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Gorontalo Utara",0.77,122.31667,"Gorontalo","Sulawesi","Asia/Makassar",10,100000
+"Kota Gorontalo",0.53333,123.1,"Gorontalo","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Majene",-3.15,118.86667,"Sulawesi Barat","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Polewali Mandar",-3.3,119.16667,"Sulawesi Barat","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Mamasa",-2.96492,119.30631,"Sulawesi Barat","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Mamuju",-2.5,119.41667,"Sulawesi Barat","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Mamuju Utara",-1.51639,119.42139,"Sulawesi Barat","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Mamuju Tengah",-2.8212,119.2662,"Sulawesi Barat","Sulawesi","Asia/Makassar",10,100000
+"Kabupaten Maluku Tenggara Barat",-7.61186,131.38,"Maluku","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Maluku Tenggara",-5.75,132.73334,"Maluku","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Maluku Tengah",-3.29167,128.9675,"Maluku","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Buru",-3.32767,126.68413,"Maluku","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Kepulauan Aru",-6.17059,134.46991,"Maluku","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Seram Bagian Barat",-3.1027,128.42996,"Maluku","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Seram Bagian Timur",-3.39851,130.39166,"Maluku","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Maluku Barat Daya",-7.8296,126.17386,"Maluku","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Buru Selatan",-3.52187,126.59271,"Maluku","Maluku","Asia/Jayapura",10,100000
+"Kota Ambon",-3.7,128.18333,"Maluku","Maluku","Asia/Jayapura",10,100000
+"Kota Tual",-5.64301,132.74934,"Maluku","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Halmahera Barat",1.41709,127.55264,"Maluku Utara","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Halmahera Tengah",0.48056,128.25,"Maluku Utara","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Kepulauan Sula",-1.8646,125.69046,"Maluku Utara","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Halmahera Selatan",-0.3955,127.90833,"Maluku Utara","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Halmahera Utara",1.73194,128.00778,"Maluku Utara","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Halmahera Timur",1.33517,128.48627,"Maluku Utara","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Pulau Morotai",2.19924,128.40546,"Maluku Utara","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Pulau Taliabu",-1.84578,124.78992,"Maluku Utara","Maluku","Asia/Jayapura",10,100000
+"Kota Ternate",0.89618,127.31016,"Maluku Utara","Maluku","Asia/Jayapura",10,100000
+"Kota Tidore Kepulauan",0.60962,127.56981,"Maluku Utara","Maluku","Asia/Jayapura",10,100000
+"Kabupaten Fak-Fak",-2.92641,132.29608,"Papua Barat","Papua","Asia/Jayapura",10,100000
+"Kabupaten Kaimana",-3.66093,133.77451,"Papua Barat","Papua","Asia/Jayapura",10,100000
+"Kabupaten Teluk Wondama",-2.7,134.5,"Papua Barat","Papua","Asia/Jayapura",10,100000
+"Kabupaten Teluk Bintuni",-1.88037,133.33105,"Papua Barat","Papua","Asia/Jayapura",10,100000
+"Kabupaten Manokwari",-0.9,133.75,"Papua Barat","Papua","Asia/Jayapura",10,100000
+"Kabupaten Sorong Selatan",-1.50495,132.28638,"Papua Barat","Papua","Asia/Jayapura",10,100000
+"Kabupaten Sorong",-1.16667,131.5,"Papua Barat","Papua","Asia/Jayapura",10,100000
+"Kabupaten Raja Ampat",-0.5,130.0,"Papua Barat","Papua","Asia/Jayapura",10,100000
+"Kabupaten Tambrauw",-0.60515,132.48962,"Papua Barat","Papua","Asia/Jayapura",10,100000
+"Kabupaten Maybrat",-1.2155,132.35092,"Papua Barat","Papua","Asia/Jayapura",10,100000
+"Kabupaten Manokwari Selatan",-1.0798,133.96729,"Papua Barat","Papua","Asia/Jayapura",10,100000
+"Kabupaten Pegunungan Arfak",-0.93523,133.89587,"Papua Barat","Papua","Asia/Jayapura",10,100000
+"Kota Sorong",-0.86507,131.25153,"Papua Barat","Papua","Asia/Jayapura",10,100000
+"Kabupaten Merauke",-7.66667,139.66667,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Jayawijaya",-4.08333,139.08333,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Jayapura",-3.0,139.95,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Nabire",-3.54016,135.55511,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Kepulauan Yapen",-1.78773,136.27716,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Biak Numfor",-1.03333,136.0,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Paniai",-3.9,136.60001,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Puncak Jaya",-3.67241,137.43896,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Mimika",-4.54357,136.56555,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Boven Digoel",-5.70519,140.36349,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Mappi",-6.49971,139.34441,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Asmat",-5.3795,138.46344,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Yahukimo",-4.60403,139.58405,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Pegunungan Bintang",-4.52167,140.29541,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Tolikara",-3.42661,137.41699,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Sarmi",-2.41667,139.08333,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Keerom",-3.3,140.61667,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Waropen",-2.286,137.01837,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Supiori",-0.73881,135.61111,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Mamberamo Raya",-2.23561,137.78229,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Nduga",-4.45093,138.10089,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Lanny Jaya",-3.91244,138.28766,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Mamberamo Tengah",-2.46064,138.45245,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Yalimo",-3.86037,138.47305,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Puncak",-4.14204,137.09702,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Dogiyai",-4.03186,135.43945,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Intan Jaya",-3.41016,136.70837,"Papua","Papua","Asia/Jayapura",10,100000
+"Kabupaten Deiyai",-3.94737,135.95032,"Papua","Papua","Asia/Jayapura",10,100000
+"Kota Jayapura",-2.64647,140.77779,"Papua","Papua","Asia/Jayapura",10,100000

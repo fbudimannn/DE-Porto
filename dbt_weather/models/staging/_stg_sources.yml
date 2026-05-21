@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: raw_weather
+    schema: raw_weather
+    description: "Raw weather and air quality data fetched hourly from Open-Meteo APIs."
+    tables:
+      - name: weather_hourly
+        description: "Raw weather metrics per city per hour"
+        columns:
+          - name: city_name
+            description: "Name of the city"
+            tests:
+              - not_null
+          - name: timestamp
+            description: "Observation timestamp in UTC/local time format"
+            tests:
+              - not_null
+      - name: air_quality_hourly
+        description: "Raw air quality metrics per city per hour"
+        columns:
+          - name: city_name
+            description: "Name of the city"
+            tests:
+              - not_null
+          - name: timestamp
+            description: "Observation timestamp in UTC/local time format"
+            tests:
+              - not_null

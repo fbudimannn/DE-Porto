@@ -1,0 +1,17 @@
+# ──────────────────────────────────────────
+# Porto DE Weather — Python Dependencies
+# ──────────────────────────────────────────
+
+# Extract & Load
+requests>=2.31.0
+psycopg2-binary>=2.9.9
+sqlalchemy>=2.0.0
+
+# Scheduling
+apscheduler>=3.10.4
+
+# Config
+python-dotenv>=1.0.0
+
+# dbt (install separately or via pip)
+dbt-postgres>=1.7.0

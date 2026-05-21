@@ -1,0 +1,95 @@
+version: 2
+
+models:
+  # DIMENSIONS
+  - name: dim_cities
+    description: "Dimension table representing the Indonesian cities being monitored."
+    columns:
+      - name: city_key
+        description: "Surrogate key generated using md5 hash of city name."
+        tests:
+          - unique
+          - not_null
+      - name: city_name
+        description: "Primary key: exact name of the city."
+        tests:
+          - not_null
+      - name: province
+        description: "Indonesian province where the city is located."
+      - name: island
+        description: "Main Indonesian island where the city belongs."
+      - name: timezone
+        description: "Local timezone designation (e.g. Asia/Jakarta)."
+
+  - name: dim_dates
+    description: "Date dimension generated dynamically."
+    columns:
+      - name: date_key
+        description: "Primary key formatted as YYYYMMDD."
+        tests:
+          - unique
+          - not_null
+      - name: date_day
+        description: "Standard SQL date format."
+        tests:
+          - not_null
+
+  # FACTS
+  - name: fact_weather_hourly
+    description: "Fact table containing hourly weather measurements."
+    columns:
+      - name: city_key
+        description: "Foreign key to dim_cities."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_cities')
+              field: city_key
+      - name: date_key
+        description: "Foreign key to dim_dates."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_dates')
+              field: date_key
+      - name: observed_at
+        description: "Exact time of the observation in UTC."
+        tests:
+          - not_null
+
+  - name: fact_air_quality
+    description: "Fact table containing hourly air quality measurements."
+    columns:
+      - name: city_key
+        description: "Foreign key to dim_cities."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_cities')
+              field: city_key
+      - name: date_key
+        description: "Foreign key to dim_dates."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_dates')
+              field: date_key
+      - name: observed_at
+        description: "Exact time of the observation in UTC."
+        tests:
+          - not_null
+      - name: aqi_category
+        description: "Qualitative air quality classification mapped using a macro."
+
+  # MARTS
+  - name: mart_city_daily_summary
+    description: "Mart table with daily weather and air quality aggregations for reporting."
+    columns:
+      - name: city_name
+        description: "Standard city name."
+        tests:
+          - not_null
+      - name: observed_date
+        description: "Calendar date for the aggregation."
+        tests:
+          - not_null

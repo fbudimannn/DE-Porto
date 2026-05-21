@@ -1,0 +1,37 @@
+name: 'dbt_weather'
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which profile dbt uses for connection details
+profile: 'weather_dw_profile'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Configure models
+models:
+  dbt_weather:
+    staging:
+      +schema: raw_weather # Write staging outputs to the raw_weather schema or we can keep it as is
+      +materialized: view
+    dimensions:
+      +schema: analytics
+      +materialized: table
+    facts:
+      +schema: analytics
+      +materialized: table
+    marts:
+      +schema: analytics
+      +materialized: table
+
+seeds:
+  dbt_weather:
+    +schema: analytics

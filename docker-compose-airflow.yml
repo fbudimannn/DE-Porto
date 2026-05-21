@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:12.6
+    container_name: weather_dw_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: weather_dw
+      POSTGRES_USER: dbt_user
+      POSTGRES_PASSWORD: dbt_pass
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dbt_user -d weather_dw"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  airflow:
+    image: apache/airflow:2.8.1-python3.11
+    container_name: weather_airflow
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8085:8080"
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=sqlite:////opt/airflow/airflow.db
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=False
+      # Default credentials for Airflow web UI
+      - _AIRFLOW_WWW_USER_USERNAME=admin
+      - _AIRFLOW_WWW_USER_PASSWORD=admin
+      # Auto install requirements on startup
+      - _PIP_ADDITIONAL_REQUIREMENTS=dbt-postgres requests python-dotenv psycopg2-binary
+      # Environment variables for our pipeline & dbt to connect inside the Docker network
+      - PYTHONPATH=/opt/airflow
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=weather_dw
+      - POSTGRES_USER=dbt_user
+      - POSTGRES_PASSWORD=dbt_pass
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./pipeline:/opt/airflow/pipeline
+      - ./dbt_weather:/opt/airflow/dbt_weather
+      - ./dashboard:/opt/airflow/dashboard
+      - ./.env:/opt/airflow/.env
+      - airflow-db:/opt/airflow
+    command: standalone
+
+volumes:
+  pgdata:
+    driver: local
+  airflow-db:
+    driver: local
