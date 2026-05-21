@@ -745,3 +745,90 @@ h1, h2, h3, h4, .brand h2 {
         grid-template-columns: 1fr;
     }
 }
+
+/* Custom Leaflet Map Dark Styling */
+.custom-popup-container .leaflet-popup-content-wrapper {
+    background: rgba(18, 24, 38, 0.85) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    backdrop-filter: blur(12px) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important;
+    border-radius: var(--radius-md) !important;
+    color: var(--text-primary) !important;
+    padding: 0 !important;
+}
+
+.custom-popup-container .leaflet-popup-tip {
+    background: rgba(18, 24, 38, 0.85) !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+.custom-map-popup {
+    padding: 10px 14px;
+    font-family: 'Inter', sans-serif;
+    min-width: 180px;
+}
+
+.custom-map-popup h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 6px;
+    letter-spacing: -0.2px;
+}
+
+.custom-map-popup p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin: 4px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-map-popup p strong {
+    color: var(--text-primary);
+}
+
+.custom-map-popup .popup-footer {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    color: var(--color-blue);
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.custom-map-popup .popup-footer:hover {
+    color: white;
+    text-shadow: 0 0 8px var(--color-blue);
+}
+
+/* Style Leaflet Zoom Controls to match the dark UI */
+.leaflet-control-zoom {
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5) !important;
+    border-radius: var(--radius-sm) !important;
+    overflow: hidden;
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+    background-color: rgba(18, 24, 38, 0.9) !important;
+    color: var(--text-secondary) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    transition: var(--transition-smooth) !important;
+    line-height: 26px !important;
+}
+
+.leaflet-control-zoom-in:hover,
+.leaflet-control-zoom-out:hover {
+    background-color: rgba(30, 41, 59, 0.9) !important;
+    color: white !important;
+}
+

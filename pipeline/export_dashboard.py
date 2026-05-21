@@ -79,6 +79,8 @@ SELECT
     c.city_name, 
     c.province,
     c.island,
+    c.lat,
+    c.lon,
     w.observed_at::text as observed_at, 
     w.temperature_c, 
     w.humidity_pct, 

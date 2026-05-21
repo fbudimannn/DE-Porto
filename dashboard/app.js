@@ -38,6 +38,23 @@ let trendChart = null;
 let visibleCitiesLimit = 24;
 let filteredCities = [];
 
+// Interactive Leaflet Map variables
+let map = null;
+let mapMarkersGroup = null;
+let selectedMapMetric = 'aqi'; // default to aqi
+
+// Preset map view positions for Indonesian islands
+const ISLAND_COORDINATES = {
+    'all': { center: [-2.5, 118.0], zoom: 5 },
+    'Sumatera': { center: [-1.0, 102.0], zoom: 6 },
+    'Jawa': { center: [-7.5, 110.0], zoom: 7 },
+    'Kalimantan': { center: [-1.0, 114.0], zoom: 6 },
+    'Sulawesi': { center: [-1.5, 120.0], zoom: 6 },
+    'Nusa Tenggara': { center: [-8.6, 120.0], zoom: 7 },
+    'Maluku': { center: [-3.0, 128.0], zoom: 6 },
+    'Papua': { center: [-4.0, 138.0], zoom: 6 }
+};
+
 // Helper to format timestamps to readable strings
 function formatDateTime(isoString) {
     if (!isoString) return "N/A";
@@ -60,11 +77,170 @@ function getAqiInfo(aqi) {
 }
 
 // ──────────────────────────────────────────────────────────────
+// INTERACTIVE MAP FUNCTIONS
+// ──────────────────────────────────────────────────────────────
+
+function initMap() {
+    const mapElement = document.getElementById('indonesia-map');
+    if (!mapElement) return;
+
+    // Centered at Indonesia coordinates [-2.5, 118.0] with zoom level 5
+    map = L.map('indonesia-map', {
+        zoomControl: true,
+        minZoom: 4,
+        maxZoom: 11
+    }).setView([-2.5, 118.0], 5);
+
+    // CartoDB Dark Matter tile layer matches the dark dashboard theme
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 20
+    }).addTo(map);
+
+    mapMarkersGroup = L.layerGroup().addTo(map);
+}
+
+function getMarkerStyle(city, metric) {
+    let radius = 8;
+    let color = '#60a5fa'; // default blue
+    let fillOpacity = 0.65;
+    
+    if (metric === 'aqi') {
+        const aqi = city.aqi_value;
+        radius = Math.max(6, Math.min(22, 6 + (aqi / 15)));
+        if (aqi <= 50) {
+            color = '#34d399'; // Green (Good)
+        } else if (aqi <= 100) {
+            color = '#fbbf24'; // Yellow (Moderate)
+        } else if (aqi <= 150) {
+            color = '#fb923c'; // Orange (Sensitive)
+        } else {
+            color = '#f87171'; // Red (Unhealthy)
+        }
+    } else if (metric === 'temp') {
+        const temp = city.temperature_c;
+        radius = Math.max(6, Math.min(22, 6 + (Math.abs(temp - 15) * 0.8)));
+        if (temp < 18) {
+            color = '#38bdf8'; // Cold
+        } else if (temp < 24) {
+            color = '#60a5fa'; // Cool
+        } else if (temp < 28) {
+            color = '#fbbf24'; // Warm
+        } else if (temp < 32) {
+            color = '#fb923c'; // Warm-hot
+        } else {
+            color = '#f87171'; // Hot
+        }
+    } else if (metric === 'rain') {
+        const rain = city.precipitation_mm;
+        radius = rain === 0 ? 5 : Math.max(6, Math.min(24, 6 + (rain * 3)));
+        if (rain === 0) {
+            color = 'rgba(96, 165, 250, 0.2)';
+            fillOpacity = 0.2;
+        } else if (rain < 1.0) {
+            color = '#93c5fd';
+            fillOpacity = 0.6;
+        } else if (rain < 5.0) {
+            color = '#3b82f6';
+            fillOpacity = 0.75;
+        } else {
+            color = '#8b5cf6';
+            fillOpacity = 0.85;
+        }
+    }
+
+    return {
+        radius: radius,
+        fillColor: color,
+        color: color,
+        weight: 1,
+        opacity: 0.9,
+        fillOpacity: fillOpacity
+    };
+}
+
+function updateMapMarkers() {
+    if (!map || !mapMarkersGroup || !dashboardData) return;
+
+    mapMarkersGroup.clearLayers();
+
+    filteredCities.forEach(city => {
+        if (city.lat === null || city.lon === null || isNaN(city.lat) || isNaN(city.lon)) return;
+
+        const style = getMarkerStyle(city, selectedMapMetric);
+        const circle = L.circleMarker([city.lat, city.lon], style);
+
+        const aqiInfo = getAqiInfo(city.aqi_value);
+        const wmo = WMO_WEATHER_CODES[city.wmo_weather_code] || { desc: "Cloudy", icon: "cloud" };
+
+        const popupContent = `
+            <div class="custom-map-popup">
+                <h4>${city.city_name}</h4>
+                <p style="margin: 3px 0 !important; font-size: 0.8rem !important; display: flex; justify-content: space-between; gap: 8px; color: #9ca3af;"><span>Province:</span> <strong style="color: #f3f4f6;">${city.province}</strong></p>
+                <p style="margin: 3px 0 !important; font-size: 0.8rem !important; display: flex; justify-content: space-between; gap: 8px; color: #9ca3af;"><span>Island:</span> <strong style="color: #f3f4f6;">${city.island}</strong></p>
+                <p style="margin: 3px 0 !important; font-size: 0.8rem !important; display: flex; justify-content: space-between; gap: 8px; color: #9ca3af;"><span>Condition:</span> <strong style="color: #f3f4f6;">${wmo.desc}</strong></p>
+                <p style="margin: 3px 0 !important; font-size: 0.8rem !important; display: flex; justify-content: space-between; gap: 8px; color: #9ca3af;"><span>Temperature:</span> <strong style="color: #60a5fa;">${city.temperature_c.toFixed(1)}°C</strong></p>
+                <p style="margin: 3px 0 !important; font-size: 0.8rem !important; display: flex; justify-content: space-between; gap: 8px; color: #9ca3af;"><span>AQI:</span> <strong style="color: ${style.fillColor};">${city.aqi_value}</strong></p>
+                <p style="margin: 3px 0 !important; font-size: 0.8rem !important; display: flex; justify-content: space-between; gap: 8px; color: #9ca3af;"><span>Rain:</span> <strong style="color: #a78bfa;">${city.precipitation_mm.toFixed(1)} mm</strong></p>
+                <div class="popup-footer" onclick="selectCityFromMap('${city.city_name.replace(/'/g, "\\'")}')" style="margin-top: 8px; font-size: 0.75rem; color: #3b82f6; text-align: center; border-top: 1px dashed rgba(255, 255, 255, 0.1); padding-top: 6px; font-weight: 600; cursor: pointer;">
+                    View Trend Details
+                </div>
+            </div>
+        `;
+
+        circle.bindPopup(popupContent, {
+            closeButton: false,
+            className: 'custom-popup-container'
+        });
+
+        circle.on('mouseover', function () {
+            this.openPopup();
+        });
+
+        circle.addTo(mapMarkersGroup);
+    });
+}
+
+function selectCityFromMap(cityName) {
+    const selector = document.getElementById('chart-city-selector');
+    if (!selector) return;
+    
+    selector.value = cityName;
+    updateTrendsChart();
+    
+    const chartCard = document.querySelector('.chart-card');
+    if (chartCard) {
+        chartCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        chartCard.style.outline = '2px solid var(--accent)';
+        chartCard.style.transition = 'outline 0.3s ease';
+        setTimeout(() => {
+            chartCard.style.outline = '2px solid transparent';
+        }, 1500);
+    }
+}
+
+// Expose callback globally so Leaflet popup onclick can invoke it
+window.selectCityFromMap = selectCityFromMap;
+
+function zoomToIsland(islandName) {
+    if (!map) return;
+    const coords = ISLAND_COORDINATES[islandName] || ISLAND_COORDINATES['all'];
+    map.flyTo(coords.center, coords.zoom, {
+        animate: true,
+        duration: 1.5
+    });
+}
+
+// ──────────────────────────────────────────────────────────────
 // DATA INITIALIZATION & RENDERING
 // ──────────────────────────────────────────────────────────────
 
 async function loadDashboardData() {
     try {
+        if (!map) {
+            initMap();
+        }
         const response = await fetch('data/latest_conditions.json');
         if (!response.ok) throw new Error('Data file not found or corrupted.');
         
@@ -197,6 +373,25 @@ function applyCityFilters(resetLimit = false) {
     document.getElementById('displayed-cities-count').innerText = filteredCities.length;
     
     renderCityCards();
+    updateMapMarkers();
+
+    // Fly to city if user searches for exactly one matching city
+    if (filteredCities.length === 1 && query.length > 2) {
+        const singleCity = filteredCities[0];
+        if (map && singleCity.lat !== null && singleCity.lon !== null) {
+            map.flyTo([singleCity.lat, singleCity.lon], 9, {
+                animate: true,
+                duration: 1.2
+            });
+            setTimeout(() => {
+                mapMarkersGroup.eachLayer(layer => {
+                    if (layer.getLatLng().lat === singleCity.lat && layer.getLatLng().lng === singleCity.lon) {
+                        layer.openPopup();
+                    }
+                });
+            }, 1300);
+        }
+    }
 }
 
 function renderCityCards() {
@@ -259,11 +454,26 @@ function renderCityCards() {
             </div>
         `;
         
-        // Interactive click event to load city trends
+        // Interactive click event to load city trends and fly to city on map
         card.addEventListener('click', () => {
             document.getElementById('chart-city-selector').value = city.city_name;
             updateTrendsChart();
             document.querySelector('.chart-card').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            if (map && city.lat !== null && city.lon !== null) {
+                map.flyTo([city.lat, city.lon], 9, {
+                    animate: true,
+                    duration: 1.2
+                });
+                
+                setTimeout(() => {
+                    mapMarkersGroup.eachLayer(layer => {
+                        if (layer.getLatLng().lat === city.lat && layer.getLatLng().lng === city.lon) {
+                            layer.openPopup();
+                        }
+                    });
+                }, 1300);
+            }
         });
         
         grid.appendChild(card);
@@ -557,9 +767,19 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Toolbar search and filters
     document.getElementById('city-search-input').addEventListener('input', () => applyCityFilters(true));
-    document.getElementById('filter-island').addEventListener('change', () => applyCityFilters(true));
+    document.getElementById('filter-island').addEventListener('change', () => {
+        const island = document.getElementById('filter-island').value;
+        zoomToIsland(island);
+        applyCityFilters(true);
+    });
     document.getElementById('filter-aqi').addEventListener('change', () => applyCityFilters(true));
     document.getElementById('sort-by').addEventListener('change', () => applyCityFilters(true));
+    
+    // Map metric change selector
+    document.getElementById('map-metric-select').addEventListener('change', (e) => {
+        selectedMapMetric = e.target.value;
+        updateMapMarkers();
+    });
     
     document.getElementById('btn-load-more').addEventListener('click', () => {
         visibleCitiesLimit += 24;

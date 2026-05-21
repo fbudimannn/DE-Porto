@@ -12,6 +12,9 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Leaflet.js Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -128,6 +131,25 @@
                         <div class="pagination-info" style="font-size: 0.9rem; color: var(--text-secondary);">
                             Showing <span id="displayed-cities-count" style="color: white; font-weight: 600;">0</span> of <span id="total-cities-count" style="color: white; font-weight: 600;">0</span> cities
                         </div>
+                    </div>
+                    
+                    <!-- Interactive Indonesia Map Card -->
+                    <div class="card map-card" style="margin-top: 16px; margin-bottom: 20px; padding: 20px; border-radius: var(--radius-md); background: rgba(14, 19, 31, 0.45); border: 1px solid var(--border-color);">
+                        <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; border-bottom: none; padding: 0;">
+                            <div>
+                                <h3 style="margin: 0; font-family: 'Outfit', sans-serif; display: flex; align-items: center; gap: 8px;"><i data-lucide="map" style="color: var(--accent-color);"></i> Interactive Indonesia Analytics Map</h3>
+                                <p class="subtext" style="margin: 4px 0 0 0; font-size: 0.8rem; color: var(--text-secondary);">Select metric type to render relative heatmap distributions</p>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <label for="map-metric-select" style="font-size: 0.85rem; color: var(--text-secondary); white-space: nowrap;">Map Metric:</label>
+                                <select id="map-metric-select" class="form-select" style="padding: 6px 12px; font-size: 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: rgba(255,255,255,0.03); color: white; cursor: pointer;">
+                                    <option value="aqi" selected>Air Quality (AQI)</option>
+                                    <option value="temp">Temperature (°C)</option>
+                                    <option value="rain">Precipitation (mm)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="indonesia-map" style="height: 380px; width: 100%; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-color); box-shadow: inset 0 0 10px rgba(0,0,0,0.5); z-index: 1;"></div>
                     </div>
                     
                     <!-- Filters & Search Toolbar -->
